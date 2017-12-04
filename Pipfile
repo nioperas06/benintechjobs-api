@@ -28,4 +28,3 @@ django-allauth = "*"
 
 
 [dev-packages]
-
