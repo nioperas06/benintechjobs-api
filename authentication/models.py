@@ -10,6 +10,7 @@ from .managers import UserManager
 
 candidate = "CANDIDATE"
 company = "COMPANY"
+
 USER_TYPE_CHOICES = (
     (candidate, "Candidate"),
     (company, "Company"),

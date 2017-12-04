@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "3944f0d5e3574c4346fe7fa2229970af368723fab0d95308bfd429e3691d6eb2"
+            "sha256": "eaa963a9daaedc63ef43c2b135fd6d74ffe669db7495c64d18b4b9586b25db49"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -62,6 +62,13 @@
             ],
             "version": "==3.7.3"
         },
+        "djangorestframework-jwt": {
+            "hashes": [
+                "sha256:ab15dfbbe535eede8e2e53adaf52ef0cf018ee27dbfad10cbc4cbec2ab63d38c",
+                "sha256:5efe33032f3a4518a300dc51a51c92145ad95fb6f4b272e5aa24701db67936a7"
+            ],
+            "version": "==1.11.0"
+        },
         "djoser": {
             "hashes": [
                 "sha256:704bdc38cc04057c04b832374dc2b6c56e1084c6bae1604ab24d0286a9f68364",
@@ -116,6 +123,13 @@
                 "sha256:8d616a382f243dbf19b54743f280b80198be0bca3a5396f1d2e1fca6223e8805"
             ],
             "version": "==1.6.0"
+        },
+        "pyjwt": {
+            "hashes": [
+                "sha256:a4e5f1441e3ca7b382fd0c0b416777ced1f97c64ef0c33bfa39daf38505cfd2f",
+                "sha256:500be75b17a63f70072416843dc80c8821109030be824f4d14758f114978bae7"
+            ],
+            "version": "==1.5.3"
         },
         "pytz": {
             "hashes": [
