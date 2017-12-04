@@ -1,0 +1,35 @@
+#   A basic travis.yml boilerplate for Django projects
+#
+#   The set-up assumes a postgreSQL database.
+#
+#   Replace the following variables in the code:
+# * your_project_settings
+# * your_github_username
+# * your_repo
+
+language: python
+
+python:
+  - "3.6"
+
+services: postgresql
+
+env:
+  - DJANGO=2.0
+
+before_install:
+  - export DJANGO_SETTINGS_MODULE=benintechjobs.settings
+  - export PYTHONPATH=$HOME/builds/nioperas06/benintechjobs
+  - export PIP_USE_MIRRORS=true
+
+install:
+  - pip install -r requirements.txt
+  - pip install django==$DJANGO --quiet
+  - pip install psycopg2 --quiet
+
+before_script:
+  - psql -c "CREATE DATABASE mydb;" -U postgres
+
+script:
+  - python manage.py syncdb --noinput
+  - python manage.py test
