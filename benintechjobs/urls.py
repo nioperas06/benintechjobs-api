@@ -16,9 +16,11 @@ Including another URLconf
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from django.contrib import admin
 
 urlpatterns = [
-    path('v1/', include('api.urls'))
+    path('v1/', include('api.urls')),
+    path('admin/', admin.site.urls),
 ]
 
 if settings.DEBUG:

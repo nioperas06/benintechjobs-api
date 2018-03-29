@@ -2,8 +2,9 @@ from .models import Job
 from .serializers import JobSerializer
 from rest_framework import generics
 
+
 class JobList(generics.ListCreateAPIView):
-    queryset = Job.objects.all()
+    queryset = Job.objects.filter(active=True)
     serializer_class = JobSerializer
 
 
